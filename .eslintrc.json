@@ -19,7 +19,10 @@
   ],
   "rules": {
       "@typescript-eslint/no-unused-vars": "off",
-      "@typescript-eslint/no-unused-params": "off"
+      "@typescript-eslint/no-unused-params": "off",
+      "quotes": ["warn", "single"],
+      "indent": ["warn", 2],
+      "semi": "warn"
   },
   "overrides": [{
       "files": ["tests/**/*.ts"],
