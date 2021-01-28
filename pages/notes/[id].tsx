@@ -1,21 +1,16 @@
-import React from 'react';
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
-const Note = (): JSX.Element => {
+export default function NotePage(): JSX.Element {
   const router = useRouter();
   const { id } = router.query;
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-      <h1>Note page</h1>
-      <br />
-      {`id: ${id as string}`}
-      <Link href="/notes">
-        <a>Notes</a>
-      </Link>
+    <div sx={{ variant: 'containers.page' }}>
+      <h1>Note: {id} </h1>
     </div>
   );
-};
-
-export default Note;
+}
