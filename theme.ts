@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
+// @ts-expect-error Theme-ui doesn't yet have a d.ts file for presets
 import { roboto } from '@theme-ui/presets';
 
 const theme = {
